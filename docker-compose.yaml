@@ -2,7 +2,7 @@ version: "2"
 services:
   ddns:
     container_name: ddns
-    image: YOUR_IMAGE_NAME
+    build: Dockerfile
     hostname: ddns
     restart: always
     environment:
