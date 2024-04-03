@@ -1,10 +1,10 @@
 version: "2"
 services:
-  ddns:
-    container_name: ddns
+  duckdns:
+    container_name: duckdns
     build: Dockerfile
-    hostname: ddns
-    restart: always
+    hostname: duckdns
+    restart: unless-restart
     environment:
       DUCKDNS_HOSTNAME: "YOUR_DOMAIN"
       DOCKDNS_TOKEN: "********************"
