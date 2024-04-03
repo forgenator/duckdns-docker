@@ -1,0 +1,14 @@
+version: "2"
+services:
+  ddns:
+    container_name: ddns
+    image: YOUR_IMAGE_NAME
+    hostname: ddns
+    restart: always
+    environment:
+      DYN_HOSTNAME: "YOUR_DOMAIN"
+      DYN_USER: "DYN_USERNAME"
+      DYN_PASS: "**************"
+      DUCKDNS_HOSTNAME: "YOUR_DOMAIN"
+      DOCKDNS_TOKEN: "********************"
+      WAIT_TIME: "300"
