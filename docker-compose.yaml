@@ -4,7 +4,7 @@ services:
     container_name: duckdns
     build: Dockerfile
     hostname: duckdns
-    restart: unless-restart
+    restart: unless-stopped
     environment:
       DUCKDNS_HOSTNAME: "YOUR_DOMAIN"
       DOCKDNS_TOKEN: "********************"
